@@ -46,7 +46,6 @@ $(function (_) {
 });
 
 // HOME
-
 var Home = function (update) {
   var sliderIntro = $("<div>holaaaa</div>");
   $("#root").append(sliderIntro);

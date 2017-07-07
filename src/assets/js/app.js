@@ -42,7 +42,6 @@ $(_ =>{
 });
 
 // HOME
-
 const Home = (update) =>{
   const sliderIntro = $('<div>holaaaa</div>');
   $('#root').append(sliderIntro);
