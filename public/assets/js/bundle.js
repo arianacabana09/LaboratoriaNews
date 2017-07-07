@@ -3,7 +3,7 @@
 
 var render = function (root) {
   root.empty();
-  var wrapper = $("<div class=\"components\"></div>");
+  var wrapper = $("<div class=\"wrapper\"></div>");
 
   if (state.home == null) {
     console.log("hola laboratoriaNews");
@@ -19,10 +19,10 @@ var render = function (root) {
   root.append(wrapper);
 };
 
+
 var state = {
   home: null,
-  notice: null,
-  noticeselect: null
+  notice: null
 };
 
 $(function (_) {
@@ -46,11 +46,10 @@ $(function (_) {
 });
 
 // HOME
+
 var Home = function (update) {
-  var sliderIntro = $("<div>HDFDFLSNDLKFNKL</div>");
-
+  var sliderIntro = $("<div>holaaaa</div>");
   $("#root").append(sliderIntro);
-
-  return sliderIntro;
+  // return sliderIntro;
 };
 },{}]},{},[1])

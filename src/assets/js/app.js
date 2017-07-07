@@ -2,7 +2,7 @@
 
 const render = (root)=>{
     root.empty();
-    const wrapper = $('<div class="components"></div>');
+    const wrapper = $('<div class="wrapper"></div>');
 
     if (state.home == null) {
       console.log("hola laboratoriaNews");
@@ -15,10 +15,10 @@ const render = (root)=>{
     root.append(wrapper);
 };
 
+
 const state = {
   home : null,
-  notice : null,
-  noticeselect : null
+  notice : null
 };
 
 $(_ =>{
@@ -42,10 +42,9 @@ $(_ =>{
 });
 
 // HOME
+
 const Home = (update) =>{
-  const sliderIntro = $('<div>HDFDFLSNDLKFNKL</div>');
-
+  const sliderIntro = $('<div>holaaaa</div>');
   $('#root').append(sliderIntro);
-
-  return sliderIntro;
+  // return sliderIntro;
 }
