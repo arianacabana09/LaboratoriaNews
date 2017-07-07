@@ -10,12 +10,11 @@ var render = function (root) {
     wrapper.append(Home(function (_) {
       return render(root);
     }));
-  } else if (state.home != null) {
-    console.log("hola noticiaPrincipal");
-    wrapper.append(Notice(function (_) {
-      return render(root);
-    }));
   }
+  //  else if (state.home != null) {
+  //   console.log("hola noticiaPrincipal");
+  //   wrapper.append(Notice(_ => render(root)));
+  // }
 
   root.append(wrapper);
 };
@@ -45,4 +44,13 @@ $(function (_) {
     render(root);
   });
 });
+
+// HOME
+var Home = function (update) {
+  var sliderIntro = $("<div>HDFDFLSNDLKFNKL</div>");
+
+  $("#root").append(sliderIntro);
+
+  return sliderIntro;
+};
 },{}]},{},[1])

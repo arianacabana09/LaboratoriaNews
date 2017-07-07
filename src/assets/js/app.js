@@ -6,11 +6,11 @@ const render = (root)=>{
 
     if (state.home == null) {
       console.log("hola laboratoriaNews");
-      wrapper.append(Home(_ => render(root)));
-    } else if (state.home != null) {
-      console.log("hola noticiaPrincipal");
-      wrapper.append(Notice(_ => render(root)));
-    }
+      wrapper.append(Home(_ => render(root)));}
+    //  else if (state.home != null) {
+    //   console.log("hola noticiaPrincipal");
+    //   wrapper.append(Notice(_ => render(root)));
+    // }
 
     root.append(wrapper);
 };
@@ -40,3 +40,12 @@ $(_ =>{
     render(root);
   });
 });
+
+// HOME
+const Home = (update) =>{
+  const sliderIntro = $('<div>HDFDFLSNDLKFNKL</div>');
+
+  $('#root').append(sliderIntro);
+
+  return sliderIntro;
+}

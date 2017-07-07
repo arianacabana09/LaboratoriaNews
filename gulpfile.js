@@ -26,7 +26,7 @@ const sources = {
     assets:config.source + paths.assets,
     html: config.source + paths.html,
     sass: config.source + paths.assets + paths.sass,
-    js: config.source + paths.js,
+    js: config.source + paths.assets + paths.js,
     rootSass: config.source + paths.assets + paths.mainSass,
     rootJS: config.source + paths.assets + paths.mainJS
 };
