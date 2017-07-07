@@ -45,10 +45,20 @@ $(function (_) {
   });
 });
 
-// HOME
+/*HOME*/
 var Home = function (update) {
-  var sliderIntro = $("<div>holaaaa</div>");
-  $("#root").append(sliderIntro);
+  var header = $("<header>holaaaa</header>");
+
+
+
+
+
+  $("#root").append(header);
   // return sliderIntro;
 };
+
+// FRAMEWORK
+$(document).ready(function () {
+  $(".button-collapse").sideNav();
+});
 },{}]},{},[1])

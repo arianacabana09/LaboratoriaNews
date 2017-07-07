@@ -41,9 +41,19 @@ $(_ =>{
   });
 });
 
-// HOME
+/*HOME*/
 const Home = (update) =>{
-  const sliderIntro = $('<div>holaaaa</div>');
-  $('#root').append(sliderIntro);
+  const header = $('<header>holaaaa</header>');
+
+
+
+
+
+  $('#root').append(header);
   // return sliderIntro;
 }
+
+// FRAMEWORK
+$( document ).ready(function(){
+  $(".button-collapse").sideNav();
+})
