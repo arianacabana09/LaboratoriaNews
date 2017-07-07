@@ -26,8 +26,9 @@ const sources = {
     assets:config.source + paths.assets,
     html: config.source + paths.html,
     sass: config.source + paths.assets + paths.sass,
-    js: config.source + paths.assets + paths.js,
+    js: config.source + paths.js,
     rootSass: config.source + paths.assets + paths.mainSass,
+    rootJS: config.source + paths.assets + paths.mainJS
 };
 
 gulp.task('html', () => {
@@ -42,10 +43,10 @@ gulp.task('sass', () => {
 });
 
 gulp.task('js', () => {
-     gulp.src(sources.js)
+     gulp.src(sources.rootJS)
         .pipe(toEs6())
-        .pipe(concat('bundle.js'))
-        .pipe(uglify())
+        .pipe(browserify())
+        .pipe(rename('bundle.js'))
         .pipe(gulp.dest(config.dist + paths.assets +"js"));
 });
 
