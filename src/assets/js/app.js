@@ -26,6 +26,9 @@ $(_ =>{
     state.title = data[0].title;
     state.subtitle = data[0].brief;
     state.name = data[0].author.name;
+    state.title2 = data[1].title;
+
+
     // portada
     console.log(data[0].title);
     console.log(data[0].brief);
@@ -35,7 +38,7 @@ $(_ =>{
     // contenido de la noticia
     console.log(data[0].body);
     // categoria
-    console.log(data[0].categories);
+    console.log(data[1].title);
 
     const root = $('#root');
     render(root);
@@ -65,8 +68,14 @@ const Home = (update) =>{
       const title = $('<h3>'+ state.title +'</h3>');
       const textContent = $('<span>'+state.subtitle+'</span>');
 
+  const notices = $('<section><section>');
+    const divRow = $('<div class="row "></div>');
+      const divColumns = $('<div id="n2" class="bg-img col s12 m6 l6"><span>'+state.title2+'</span></div><div id="n3" class="bg-img col s12 m3 l3"></div><div id="n4" class="bg-img col s12 m3 l3"></div>');
+
+
   $('#root').append(header);
   $('#root').append(noticeMain);
+  $('#root').append(notices);
 
   header.append(navMobile);
   header.append(main);
@@ -82,6 +91,9 @@ const Home = (update) =>{
   noticeMain.append(bodybg);
   bodybg.append(title);
   bodybg.append(textContent);
+
+  notices.append(divRow);
+  divRow.append(divColumns);
 
   // return sliderIntro;
 }

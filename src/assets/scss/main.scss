@@ -17,10 +17,32 @@ a{
   color: rgb(255, 255, 255);
 }
 
-#bg-notice{
-  background-image: url('../img/news/news-0.png');
+.bg-img{
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+#bg-notice{
+  background-image: url('../img/news/news-0.png');
+  height: 50vh;
+  color: $colortext2;
+}
+
+#n2{
+  background-image: url('../img/news/news-1.png');
+  height: 50vh;
+  span{
+    background-color: $colortext;
+    color: $colortext2;
+  }
+}
+#n3{
+  background-image: url('../img/news/news-2.png');
+  height: 50vh;
+  color: $colortext2;
+}
+#n4{
+  background-image: url('../img/news/news-3.png');
   height: 50vh;
   color: $colortext2;
 }
