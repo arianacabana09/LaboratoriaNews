@@ -63,21 +63,29 @@ var Home = function (update) {
   var divContainer = $("<div class=\"nav-wrapper\"></div>");
   var divOptions = $("<div class=\"col s12 l12\"><a href=\"#\" class=\"breadcrumb\">Lo último</a><a href=\"#\" class=\"breadcrumb\">Opinión</a><a href=\"#!\" class=\"breadcrumb\">Cultura</a><a href=\"#\" class=\"breadcrumb\">Perú</a><a href=\"#\" class=\"breadcrumb\">Tecología</a><a href=\"#!\" class=\"breadcrumb\">Mundo</a><a href=\"#\" class=\"breadcrumb\">Economía</a><a href=\"#\" class=\"breadcrumb\">Lifestyle</a><a href=\"#!\" class=\"breadcrumb\">Deporte</a></div>");
 
+  var noticeMain = $("<section><section>");
+  var bodybg = $("<div id=\"bg-notice\"><div>");
+  var title = $("<h1>" + "data[0].title" + "</h1>");
+  var textContent = $("");
+
   $("#root").append(header);
+  $("#root").append(noticeMain);
+
   header.append(navMobile);
   header.append(main);
-
   navMobile.append(divWrapper);
   divWrapper.append(btnLeft);
   divWrapper.append(optionsdes);
-
   divWrapper.append(logo);
   divWrapper.append(menuBar);
-
   main.append(navDesktop);
   navDesktop.append(divContainer);
   divContainer.append(divOptions);
-  // divWrapper.append(itemsMenu);
+
+  noticeMain.append(bodybg);
+  bodybg.append(title);
+  bodybg.append(textContent);
+
   // return sliderIntro;
 };
 
