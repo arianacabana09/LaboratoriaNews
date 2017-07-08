@@ -23,8 +23,7 @@ const state = {
 
 $(_ =>{
   $.getJSON('http://localhost:3000/api/news/',(data)=>{
-    //toda la api
-    // console.log(data[0]);
+    state.title = data[0].title;
     // portada
     console.log(data[0].title);
     console.log(data[0].brief);
@@ -61,7 +60,7 @@ const Home = (update) =>{
 
   const noticeMain = $('<section><section>');
     const bodybg = $('<div id="bg-notice"><div>');
-      const title = $('<h1>'+ `data[0].title` +'</h1>');
+      const title = $('<h1>'+ state.title +'</h1>');
       const textContent = $('');
 
   $('#root').append(header);
