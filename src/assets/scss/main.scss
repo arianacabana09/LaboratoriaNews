@@ -20,5 +20,7 @@ a{
 #bg-notice{
   background-image: url('../img/news/news-0.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+  height: 50vh;
+  color: $colortext2;
 }
