@@ -2,7 +2,17 @@
 @import "colors";
 @import "grid";
 
-body{
-  background-color: rgb(230, 211, 46);
+body, nav{
+  color: $colortext;
+  background-color: $colortext2;
   font-family: $font_main;
+}
+
+a{
+  color: $colortext!important;
+}
+
+#navDesktop{
+  background-color: $colortitle;
+  color: rgb(255, 255, 255);
 }
