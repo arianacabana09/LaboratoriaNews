@@ -49,42 +49,24 @@ $(function (_) {
 // const btnSearch = $('');
 var Home = function (update) {
   var header = $("<header></header>");
-  var navContainer = $("<nav></nav>");
+  var navContainer = $("<nav class=\"nav-extended\"></nav>");
   var divWrapper = $("<div class=\"nav-wrapper\"></div>");
-  var btnLeft = $("<ul class=\"left hide-on-med-and-down\"><li><a href=\"#\"><img src=\"assets/img/menu.png\">section</a></li><li><a href=\"#\"><img src=\"assets/img/search.png\">search</a></li></ul>");
+  var btnLeft = $("<ul class=\"hide-on-med-and-down\"><li><a href=\"#\"><img src=\"assets/img/menu.png\">section</a></li><li><a href=\"#\"><img src=\"assets/img/search.png\">search</a></li></ul>");
   var optionsdes = $("<ul class=\"right hide-on-med-and-down\"><li><a href=\"https://www.facebook.com/laboratoria.la/\" target=\"_blank\"><img src=\"assets/img/fb.png\"></a></li><li><a href=\"https://twitter.com/LaboratoriaLA\" target=\"_blank\"><img src=\"assets/img/tw.png\"></a></li><li><a href=\"https://www.linkedin.com/company-beta/3718820/\" target=\"_blank\"><img src=\"assets/img/in.png\"></a></li></ul>");
-  //
-  // <div class="nav-wrapper">
-  //   <a href="#!" class="brand-logo">Logo</a>
-  //   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-
-
-
-
-
-  //   <ul class="right hide-on-med-and-down">
-  //     <li><a href="sass.html">desktop</a></li>
-  //     <li><a href="badges.html">Components</a></li>
-  //     <li><a href="collapsible.html">Javascript</a></li>
-  //     <li><a href="mobile.html">Mobile</a></li>
-  //   </ul>
-
-  //   <ul class="side-nav" id="mobile-demo">
-  //     <li><a href="sass.html">mobileeee</a></li>
-  //     <li><a href="badges.html">Components</a></li>
-  //     <li><a href="collapsible.html">Javascript</a></li>
-  //     <li><a href="mobile.html">Mobile</a></li>
-  //   </ul>
-
-  // </div>
-
+  var logo = $("<a href=\"#\" class=\"brand-logo center hide-on-large-only\"><img src=\"assets/img/logoicon.png\"></a>");
+  var menuBar = $("<a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><img src=\"assets/img/menu.png\"></a>");
+  // const itemsMenu = $('<ul class="side-nav" id="mobile-demo"><li><a href="sass.html">Opinión</a></li><li><a href="sass.html">Cultura</a></li><li><a href="sass.html">Tecología</a></li><li><a href="sass.html">Perú</a></li></li><li><a href="sass.html">Mundo</a></li><li><a href="#">Economía</a><li><a>Lifestyle</a><li><a>Deporte<a></li></ul>');
 
   $("#root").append(header);
   header.append(navContainer);
   navContainer.append(divWrapper);
   divWrapper.append(btnLeft);
   divWrapper.append(optionsdes);
+
+  divWrapper.append(logo);
+  divWrapper.append(menuBar);
+  // divWrapper.append(itemsMenu);
   // return sliderIntro;
 };
 
